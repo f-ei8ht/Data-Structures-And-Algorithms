@@ -1,4 +1,4 @@
-package MissingElement;
+package MissingNumber;
 
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ public class BruteTest {
 
     @Test
     public void missingTest() {
-        int[] ar = { 3, 0, 1 };
+        int[] ar = { 0, 1 };
         assertEquals(2, Brute.missingNumber(ar));
     }
 }
