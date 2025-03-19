@@ -1,7 +1,5 @@
 package ConcatenationOfArray;
 
-import java.util.Arrays;
-
 public class Brute {
     public static int[] getConcatenation(int[] nums) {
         int[] ans = new int[2 * nums.length];
