@@ -1,4 +1,4 @@
-package FindTheIndexOfFirstOccurenceInString;
+package FindTheIndexOfFirstOccurenceInString.FindTheIndexOfFirstOccurenceInString;
 
 public class Brute {
 
