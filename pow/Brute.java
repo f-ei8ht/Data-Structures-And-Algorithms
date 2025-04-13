@@ -1,17 +1,29 @@
 package pow;
 
 public class Brute {
-    public static double myPow(double x, int n) {
-        double p = 1.0;
-        if (n > 0) {
-            for (int i = 1; i <= n; i++) {
-                p = p * x;
-            }
-        } else {
-            for (int i = 1; i <= Math.abs(n); i++) {
-                p = p * 1 / x;
-            }
+
+    public static void fastExponential(double num, int power) {
+        double result = 1.0;
+        long pow = power;
+        if (pow < 0) {
+            num = 1 / num;
+            pow = -pow;
         }
-        return p;
+
+        while (pow > 0) {
+            if (pow % 2 != 0) {
+                result *= num;
+            }
+            num *= num;
+            pow /= 2;
+        }
+
+        System.out.println("Result: " + result);
+        System.out.println(Integer.MIN_VALUE);
+
+    }
+
+    public static void main(String[] args) {
+        fastExponential(2, -2147483648);
     }
 }
