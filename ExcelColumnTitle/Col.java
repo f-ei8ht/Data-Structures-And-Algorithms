@@ -1,4 +1,4 @@
-class Solution {
+public class Col {
     public int titleToNumber(String columnTitle) {
         StringBuilder st = new StringBuilder(columnTitle);
         int sum = 0;
